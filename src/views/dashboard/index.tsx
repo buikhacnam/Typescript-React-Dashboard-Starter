@@ -39,34 +39,34 @@ const Dashboard: React.FC<IndexProps> = () => {
 	const [a, setA] = React.useState(0)
     const [isTokenFound, setTokenFound] = React.useState(false);
 
-	// React.useEffect(() => {
-	// 	let data;
+	React.useEffect(() => {
+		let data;
 	
-	// 	async function tokenFunc() {
-	// 	  data = await getToken(setTokenFound);
-	// 	  console.log('data', data)
-	// 	  if (data) {
-	// 		console.log("Token is", data);
-	// 	  }
-	// 	  return data;
-	// 	}
+		async function tokenFunc() {
+		  data = await getToken(setTokenFound);
+		  console.log('data', data)
+		  if (data) {
+			console.log("Token is", data);
+		  }
+		  return data;
+		}
 	
-	// 	tokenFunc();
-	// }, [setTokenFound, a]);
+		tokenFunc();
+	}, [setTokenFound, a]);
 
-	// onMessageListener()
-    // .then((payload) => {
-    // //   setShow(true);
-    // //   setNotification({
-    // //     title: payload.notification.title,
-    // //     body: payload.notification.body,
-    // //   });
-	// 	console.log('hiiiiiiiiiiiiiiiiii')
-    //   console.log(payload);
-	//   message.info(payload.notification.title)
-	//   setA(a+1)
-    // })
-    // .catch((err) => console.log("failed: ", err));
+	onMessageListener()
+    .then((payload) => {
+    //   setShow(true);
+    //   setNotification({
+    //     title: payload.notification.title,
+    //     body: payload.notification.body,
+    //   });
+		console.log('hiiiiiiiiiiiiiiiiii')
+      console.log(payload);
+	  message.info(payload.notification.title)
+	  setA(a+1)
+    })
+    .catch((err) => console.log("failed: ", err));
 	return (
 		<>
 			<Layout>
