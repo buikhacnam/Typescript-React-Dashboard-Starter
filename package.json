@@ -30,8 +30,8 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start && cra-append-sw  ./firebase-messaging-sw.js",
-    "build": " CI=false && react-scripts build && cra-append-sw  ./firebase-messaging-sw.js",
+    "start": "react-scripts start && cra-append-sw  ./public/firebase-messaging-sw.js",
+    "build": " CI=false && react-scripts build && cra-append-sw  ./public/firebase-messaging-sw.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
