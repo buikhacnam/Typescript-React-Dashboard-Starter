@@ -1,0 +1,1 @@
+export const userRole = localStorage.getItem('voc-authorities') || []
