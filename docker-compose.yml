@@ -1,0 +1,8 @@
+version: "3"
+services:
+  my-vpbank:
+    stdin_open: true
+    tty: true
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile.dev
